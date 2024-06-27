@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* reset Css */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#4e085f);
+    background: linear-gradient(90deg, #153677, #0e0969);
     padding: 10px;
 }
 
-.todo-app{
+.todo-app {
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -22,19 +23,20 @@
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-.todo-app h2{
-    color: #002765;
+
+.todo-app h2 {
+    color: #76020b;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.todo-app h2 img{
+.todo-app h2 img {
     width: 30px;
     margin-left: 10px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +45,8 @@
     padding-left: 20px;
     margin-bottom: 20px;
 }
-input{
+
+input {
     flex: 1;
     border: none;
     outline: none;
@@ -51,17 +54,19 @@ input{
     padding: 10px;
     font-weight: 14px;
 }
-button{
+
+button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #b31245;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px ;
+    border-radius: 40px;
 }
-ul li{
+
+ul li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -69,7 +74,8 @@ ul li{
     cursor: pointer;
     position: relative;
 }
-ul li::before{
+
+ul li::before {
     content: '';
     position: absolute;
     height: 28px;
@@ -82,21 +88,24 @@ ul li::before{
     left: 8px;
 
 }
-ul li.checked{
-    color: #555;
+
+ul li.checked {
+    color: #a50707;
     text-decoration: line-through;
 }
-ul li.checked::before{
+
+ul li.checked::before {
     background-image: url(./images/checked.png);
 }
-ul li span{
+
+ul li span {
     position: absolute;
     right: 0;
     top: 5px;
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #4c4343;
+    color: #db1616;
     line-height: 40px;
     text-align: center;
 }
